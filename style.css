@@ -9,10 +9,13 @@ body, h1, h2, h3, p, a{
 body{
   background-color: #020202;
   color:white;
-  font-family: "Bebas Neue", sans-serif;
-
+  
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: "Afacad Flux", sans-serif;
+  font-weight: 700;
 
 }
+
 a{
   color:white;
 }
@@ -78,12 +81,12 @@ nav a, .page-title{
   letter-spacing: 1px;
   }
 .page-title{
-  font-size:40px;
+  font-size:46px;
   color:#848484;
 }
 nav a:hover{
-  color:#4A7DFF;
-  text-decoration: underline;
+  color:#ff4ab1;
+  /* text-decoration: underline; */
   
 }
 
@@ -113,6 +116,8 @@ main {
   flex-direction: column;
   align-items: center; /* Centers blog-info horizontally */
   justify-content: center; /* Keeps content centered */
+
+  padding:20px;
 }
 .blog-card:not(:first-child):not(:nth-child(2)) {
   margin-top: 25px;
@@ -166,7 +171,7 @@ main {
 }
 .blog-title:hover{
   color:#ff4ab1;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .subinfo{
   color:#848484;
@@ -251,8 +256,46 @@ footer p {
 
 
 .footer-links a:hover{
-  color:#4A7DFF
+  color:#4A7DFF;
 }
 .cc:hover{
-  color:#ff4ab1
+  color:#ff4ab1;
 }
+
+
+.paginator{
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  margin:25px;
+  font-size:32px;
+  word-spacing: 10px;
+}
+
+.current-pag{
+  background-color: #4A7DFF;
+  padding:10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:black;
+}
+
+
+
+/* Consistant across 3 primary sizes, 27 Monitor, 14 Inch Monitor, Mobile */
+
+/* Resets */
+
+/* General Coloring */
+
+/* General Sizing */
+
+/* Navigation Bar */
+
+/* Main */
+
+/* Blog Card */
+
+/* Paginator */
+
+/* Footer */
