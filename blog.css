@@ -1,0 +1,331 @@
+/* Resets */
+body, h1, h2, h3, p, a{
+    margin: 0;
+    padding:0;
+    
+  }
+  
+  /* Basic ahh coloring */
+  body{
+    background-color: #020202;
+    color:white;
+
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 700;
+  
+  }
+  
+  a{
+    color:white;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 0.9375rem; /* 15px */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4A7DFF;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff4ab1;
+  }
+  
+  nav{
+    max-width: 1210px;
+    margin: auto;
+    padding:25px;
+  
+  }
+  
+  .nav-top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  
+  nav div{
+    display:flex;
+    gap: 10px;
+  }
+  
+  
+  .spacer{
+    /* width:4px; 
+    height: 26px; 
+    background-color:#4A7DFF; */
+    color: #4A7DFF;
+    -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  }
+  
+  .spacer:hover{
+    cursor: default;
+  }
+  
+  nav a{
+    padding:0;
+    margin:0;
+    height: fit-content;
+    text-decoration: none;
+  
+  }
+  
+  nav a, .page-title{
+    letter-spacing: 1px;
+  
+  }
+  
+  .page-title{
+    color:#848484;
+  
+  }
+  nav a:hover{
+    color:#ff4ab1;
+    
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .major, .home-link{
+    color:#4A7DFF;
+  }
+
+  .blog-card {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    height: 250px;
+    margin: auto; /* Center it */
+    overflow: hidden;
+    border-radius: 32px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers blog-info horizontally */
+    justify-content: center; /* Keeps content centered */
+  
+    padding:20px;
+  }
+  
+  .blog-card:not(:first-child):not(:nth-child(2)) {
+    margin-top: 25px;
+  }
+  
+  /* Make the entire <nav> the reference for the background */
+nav {
+    /* Let nav be positioned so the absolutely positioned .blog-bg is bound to nav. */
+    position: relative;
+    /* Keep your existing margins/padding if you like */
+    max-width: 1280px;
+    margin: auto;
+    padding: 25px;
+    /* Hide any part of the background image that extends outside */
+    overflow: hidden;
+  }
+  
+  /* Remove relative positioning from .nav-bottom so .blog-bg 
+     references the nav container's dimensions instead */
+  .nav-bottom {
+    position: static;
+    /* Keep your existing styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Absolutely position the background image so it fills the entire nav */
+  .blog-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep it behind text and other elements */
+  }
+  
+  /* Ensure the image covers the entire nav container */
+  .blog-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .image-overaly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .blog-card:hover .blog-bg {
+    transform: scale(1.4);
+  }
+  
+  .blog-info {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  
+   
+  .blog-title{
+   }
+  .blog-title:hover{
+    color:#ff4ab1;
+    /* text-decoration: underline; */
+  }
+  .subinfo{
+    color:#848484;
+  }
+  /* Keep everything centered */
+  .blog-1{
+    margin-top: 0 !important;
+  }
+  
+  
+  /* Footer */
+  footer {
+    margin-top: 25px;
+    text-align: center !important;
+    width: 100%;
+    background-color: #0f0f0f;
+    padding-top: 1.5625rem; /* 25px */
+  }
+  
+  footer a {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin: 0.625rem; /* 10px */
+    margin-bottom: 0.5rem; /* 8px */
+  }
+  
+  .footer-header {
+    margin: 0;
+  }
+  
+  .line {
+    height: 0.0625rem; /* 1px */
+    width: 20%;
+    background-color: #303030;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-links {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bobacat {
+    margin-top: 0.3125rem; /* 5px */
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  
+  /* Gradient */
+  #shadowBox {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .radiant {
+    margin: 0;
+  }
+  
+  .radiant-text-animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00c8ff, #00ff00, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
+  
+  
+  .footer-links a:hover{
+    color:#4A7DFF;
+  }
+  .cc:hover{
+    color:#ff4ab1;
+  }
+  
+  
+  .paginator{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    margin:25px;
+    word-spacing: 10px;
+  }
+  
+  .current-pag{
+    background-color: #4A7DFF;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:black;
+  }
+  
+  
+  
+  /* Consistant across 3 primary sizes, 27 Monitor, 14 Inch Monitor, Mobile */
+  
+  /* Resets */
+  
+  /* General Coloring */
+  
+  /* General Sizing */
+  
+  /* Navigation Bar */
+  
+  /* Main */
+  
+  /* Blog Card */
+  
+  /* Paginator */
+  
+  /* Footer */
+  
